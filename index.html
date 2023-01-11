@@ -25,7 +25,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <!-- <script>
+      var typed = new Typed('.typed-text', {
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 30
+      });
+    </script> -->
 </head>
 
 <body id="top">
@@ -98,11 +107,11 @@
         <div class="container">
 
           <div class="hero-banner">
-            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_xRmNN8.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" class="img-cover" loop  autoplay></lottie-player>
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_c1dtgznx.json"  background="transparent"  speed="1"   loop  autoplay class="img-cover"></lottie-player>
             <!-- <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Kangkan's Photo"
               class="img-cover"> -->
 
-            <div class="elem elem-1">
+            <!-- <div class="elem elem-1">
               <p class="elem-title">4</p>
 
               <p class="elem-text">Years of Success</p>
@@ -112,14 +121,13 @@
               <p class="elem-title">100+</p>
 
               <p class="elem-text">Projects Completed</p>
-            </div>
+            </div> -->
 
-            <div class="elem elem-3">
+            <!-- <div class="elem elem-3">
               <ion-icon name="trophy"></ion-icon>
-            </div>
+            </div> -->
 
-            <img src="./assets/images/rotate-img.png" width="269" height="272" alt="I'm fullstack developer from Guwagati"
-              class="rotate-img">
+            
 
           </div>
 
@@ -139,13 +147,26 @@
 
               <a href="#about" class="btn">About Me</a>
             </div>
-
+            <img src="./assets/images/rotate-img.png" width="269" height="272"
+            alt="I'm fullstack developer from Guwahati" class="rotate-img">
           </div>
 
         </div>
+
+        <div id="typed-text"></div>
+
+        <script>
+          var typed = new Typed("#typed-text", {
+            strings: ["<span id='typed-1-no'>4 </span>&nbsp;<span id='typed-title'>Years of Success</span>",
+              "<span id='typed-2-no'>100+ </span>&nbsp;<span id='typed-title'>Projects Completed</span>"
+            ],
+            typeSpeed: 30,
+            loop: true,
+            loopCount: Infinity,
+            showCursor: false,
+          });
+        </script>
       </section>
-
-
 
 
 
@@ -157,9 +178,10 @@
         <div class="container">
 
           <figure class="about-banner">
-
-            <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Kangkan's Photo"
-              class="img-cover">
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_m9fz64i8.json" background="transparent"
+              speed="1" style="width: 300px; height: 300px;" loop autoplay class="img-cover"></lottie-player>
+            <!-- <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Kangkan's Photo"
+              class="img-cover"> -->
 
             <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Kangkan's Photo"
               class="abs-img">
@@ -185,15 +207,19 @@
             <!-- <h3 class="h3 section-title">I’m an Indian Fullstack Developer and creative UI/UX Designer with a passion for solving problems through simple & interactive designs.</h3> -->
 
             <p class="section-text">
-              I’m an Indian Fullstack Developer and creative UI/UX Designer with a passion for solving problems through simple & interactive designs.
+              I’m an Indian Fullstack Developer and creative UI/UX Designer with a passion for solving problems through
+              simple & interactive designs.
             </p>
 
             <p class="section-text">
-              During the day I work as a senior developer at NIC and in the evening I work on freelance projects and utilize the time to built things that live on the internet.
+              During the day I work as a senior developer at NIC and in the evening I work on freelance projects and
+              utilize the time to built things that live on the internet.
             </p>
 
             <p class="section-text">
-              I'm an open-source enthusiast. My site has no ads, no affiliate links, no tracking or analytics, no sponsored posts, and no paywall. My only motivation for this site is to share what I've learned with the world. 
+              I'm an open-source enthusiast. My site has no ads, no affiliate links, no tracking or analytics, no
+              sponsored posts, and no paywall. My only motivation for this site is to share what I've learned with the
+              world.
             </p>
 
             <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
@@ -407,7 +433,7 @@
         - #CONTACT
       -->
 
-      <section class="section contact" id="contact">
+      <!-- <section class="section contact" id="contact">
         <div class="container">
 
           <div class="contact-card">
@@ -483,7 +509,7 @@
           </div>
 
         </div>
-      </section>
+      </section> -->
 
 
 
@@ -492,7 +518,7 @@
       <!-- 
         - #BLOG
       -->
-
+<!-- 
       <section class="section blog" id="blog">
         <div class="container">
 
@@ -566,7 +592,7 @@
           </ul>
 
         </div>
-      </section>
+      </section> -->
 
     </article>
   </main>
