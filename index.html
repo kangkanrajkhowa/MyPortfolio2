@@ -27,8 +27,7 @@
     rel="stylesheet">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- <script>
       var typed = new Typed('.typed-text', {
         strings: ["First sentence.", "Second sentence."],
@@ -107,28 +106,7 @@
         <div class="container">
 
           <div class="hero-banner">
-            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_c1dtgznx.json"  background="transparent"  speed="1"   loop  autoplay class="img-cover"></lottie-player>
-            <!-- <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Kangkan's Photo"
-              class="img-cover"> -->
-
-            <!-- <div class="elem elem-1">
-              <p class="elem-title">4</p>
-
-              <p class="elem-text">Years of Success</p>
-            </div>
-
-            <div class="elem elem-2">
-              <p class="elem-title">100+</p>
-
-              <p class="elem-text">Projects Completed</p>
-            </div> -->
-
-            <!-- <div class="elem elem-3">
-              <ion-icon name="trophy"></ion-icon>
-            </div> -->
-
-            
-
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_c1dtgznx.json" background="transparent" speed="1" loop autoplay class="img-cover"></lottie-player>
           </div>
 
           <div class="hero-content">
@@ -154,18 +132,6 @@
         </div>
 
         <div id="typed-text"></div>
-
-        <script>
-          var typed = new Typed("#typed-text", {
-            strings: ["<span id='typed-1-no'>4 </span>&nbsp;<span id='typed-title'>Years of Success</span>",
-              "<span id='typed-2-no'>100+ </span>&nbsp;<span id='typed-title'>Projects Completed</span>"
-            ],
-            typeSpeed: 30,
-            loop: true,
-            loopCount: Infinity,
-            showCursor: false,
-          });
-        </script>
       </section>
 
 
@@ -178,33 +144,13 @@
         <div class="container">
 
           <figure class="about-banner">
-            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_m9fz64i8.json" background="transparent"
-              speed="1" style="width: 300px; height: 300px;" loop autoplay class="img-cover"></lottie-player>
-            <!-- <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Kangkan's Photo"
-              class="img-cover"> -->
-
-            <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Kangkan's Photo"
-              class="abs-img">
-
-            <div class="abs-icon abs-icon-1">
-              <ion-icon name="logo-css3"></ion-icon>
-            </div>
-
-            <div class="abs-icon abs-icon-2">
-              <ion-icon name="logo-javascript"></ion-icon>
-            </div>
-
-            <div class="abs-icon abs-icon-3">
-              <ion-icon name="logo-laravel"></ion-icon>
-            </div>
-
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_qlalnbpt.json" background="transparent" speed="1" loop autoplay class="img-cover"></lottie-player>
           </figure>
 
           <div class="about-content">
 
             <p class="section-subtitle">Welcome! It's great to have you here.</p>
 
-            <!-- <h3 class="h3 section-title">I’m an Indian Fullstack Developer and creative UI/UX Designer with a passion for solving problems through simple & interactive designs.</h3> -->
 
             <p class="section-text">
               I’m an Indian Fullstack Developer and creative UI/UX Designer with a passion for solving problems through
@@ -237,7 +183,7 @@
         - #PORTFOLIO
       -->
 
-      <section class="section portfolio" id="portfolio">
+      <!-- <section class="section portfolio" id="portfolio">
         <div class="container">
 
           <p class="section-subtitle">Portfolio</p>
@@ -325,7 +271,7 @@
           </ul>
 
         </div>
-      </section>
+      </section> -->
 
 
 
@@ -335,7 +281,7 @@
         - #SKILLS
       -->
 
-      <section class="section skills" id="skills">
+      <!-- <section class="section skills" id="skills">
         <div class="container">
 
           <p class="section-subtitle">My Skills</p>
@@ -423,7 +369,7 @@
           </ul>
 
         </div>
-      </section>
+      </section> -->
 
 
 
@@ -649,7 +595,129 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: ["<span id='typed-1-no'>4 </span>&nbsp;<span id='typed-title'>Years of Success</span>",
+        "<span id='typed-2-no'>100+ </span>&nbsp;<span id='typed-title'>Projects Completed</span>"
+      ],
+      typeSpeed: 100,
+      loop: true,
+      loopCount: Infinity,
+      showCursor: false,
+    });
+  </script>
+<script>
+ particlesJS("home", {
+  "particles": {
+    "number": {
+      "value": 380,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</script>
 </body>
 
 </html>

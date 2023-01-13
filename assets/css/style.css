@@ -159,7 +159,7 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
+  background-color: hsl(180, 80%, 15.7%);
   color: var(--cadet-blue-crayola);
   font-size: 1.6rem;
   line-height: 1.6;
@@ -207,10 +207,12 @@ body {
   padding: var(--padding, 10px 40px);
   border-radius: 50px;
   transition: var(--transition-2);
+  z-index: 2;
 }
 
 .btn-primary.blue {
-  background-color: var(--klein-blue);
+  background-color: blue;
+  background-color: rgb(20, 46, 179, 1);
 }
 
 .btn-primary.blue:is(:hover, :focus) {
@@ -267,12 +269,12 @@ body {
   position: fixed;
   padding-block: 15px;
   width: 100%;
-  background-color: var(--space-cadet);
+  background-color: hsl(180, 80%, 15.7%);
   height: 65px;
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
-  z-index: 4;
+  z-index: 3;
 }
 
 .header.nav-active {
@@ -361,6 +363,10 @@ body {
   display: grid;
   place-items: center;
   position: relative;
+  background-color: hsl(176.9, 84%, 31.8%);
+}
+canvas {
+  position: absolute;
 }
 
 .hero-banner {
@@ -370,6 +376,7 @@ body {
   border-radius: var(--radius-10);
   margin-inline: auto;
   margin-block-end: 30px;
+  z-index: 2;
 }
 
 .hero-banner img {
@@ -422,13 +429,14 @@ body {
 }
 
 .about {
-  padding-block-start: 120px;
+  padding-block-start: 30px;
 }
 
 .about-banner {
-  background-color: var(--independence);
+  /* background-color: var(--independence); */
   border-radius: var(--radius-10);
   margin-block-end: 30px;
+  height: 300px;
 }
 
 .about-banner>.img-cover {
@@ -727,7 +735,7 @@ textarea.contact-input {
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--independence);
+  background-color: hsl(180, 81.3%, 21%);
   padding-block: 60px;
 }
 
@@ -921,14 +929,15 @@ textarea.contact-input {
 
   .header,
   .header.nav-active {
-    background-color: transparent;
+    background-color: teal;
+    background-color: rgba(0, 0, 0, .25);
     box-shadow: none;
     height: unset;
     padding-block: 30px;
   }
 
   .header.active {
-    background-color: var(--space-cadet);
+    background-color: hsl(180, 80%, 15.7%);
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
@@ -990,6 +999,7 @@ textarea.contact-input {
     height: 390px;
     margin-inline: 0;
     margin-inline-start: auto;
+    z-index: 2;
   }
 
   .elem {
@@ -1068,7 +1078,7 @@ textarea.contact-input {
    */
 
   .about {
-    padding-block: 180px;
+    padding-block: 30px;
   }
 
   .about .container {
