@@ -159,8 +159,9 @@ html {
 }
 
 body {
-  background-color: hsl(180, 80%, 15.7%);
-  color: var(--cadet-blue-crayola);
+  /* background-color: hsl(180, 80%, 15.7%); */
+  background-color: #fff;
+  color: #333;
   font-size: 1.6rem;
   line-height: 1.6;
   overflow-x: hidden;
@@ -232,13 +233,13 @@ body {
 .section-subtitle {
   color: var(--orange-soda);
   font-family: var(--ff-barlow);
-  font-size: var(--fs-4);
+  font-size: 26px;
   text-align: center;
 }
 
 .h2,
 .h3 {
-  color: var(--white);
+  color: #1c6a98;
   font-family: var(--ff-barlow);
   font-weight: var(--fw-600);
   line-height: 1.3;
@@ -269,7 +270,7 @@ body {
   position: fixed;
   padding-block: 15px;
   width: 100%;
-  background-color: hsl(180, 80%, 15.7%);
+  background-color: #fff;
   height: 65px;
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -305,6 +306,7 @@ body {
 .nav-toggle-btn.active .close-icon,
 .nav-toggle-btn .menu-icon {
   display: block;
+  color: hsl(7, 95.8%, 62.9%);
 }
 
 .navbar {
@@ -324,7 +326,8 @@ body {
 }
 
 .navbar-link {
-  color: var(--white);
+  /* color: var(--white); */
+  color: #333;
   font-family: var(--ff-barlow);
   padding-block: 3px;
   transition: var(--transition-1);
@@ -362,7 +365,9 @@ body {
   display: grid;
   place-items: center;
   position: relative;
-  background-color: hsl(176.9, 84%, 31.8%);
+  /* background-color: hsl(176.9, 84%, 31.8%); */
+  background-color: #f0f1f2;
+  border-bottom: 1px solid #e8e8e8;
 }
 canvas {
   position: absolute;
@@ -384,7 +389,8 @@ canvas {
 
 .hero-content {
   text-align: center;
-  color: var(--white);
+  /* color: var(--white); */
+  color: #333;
   position: relative;
 }
 
@@ -429,6 +435,7 @@ canvas {
 
 .about {
   padding-block-start: 30px;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .about-banner {
@@ -793,7 +800,7 @@ textarea.contact-input {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-2);
-  z-index: 1;
+  z-index: 2;
 }
 
 .back-to-top.active {
@@ -928,15 +935,15 @@ textarea.contact-input {
 
   .header,
   .header.nav-active {
-    background-color: teal;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(255, 255, 255, 0.25);
     box-shadow: none;
     height: unset;
     padding-block: 30px;
   }
 
   .header.active {
-    background-color: hsl(180, 80%, 15.7%);
+    /* background-color: hsl(180, 80%, 15.7%); */
+    background-color: #fff;
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
@@ -1229,6 +1236,7 @@ textarea.contact-input {
   min-width: 300px;
   max-width: 100%;
   height: 40px;
+  /* font-size: 25px; */
 }
 #typed-title {
   color: var(--black);
@@ -1278,6 +1286,8 @@ canvas {
 }
 
 .skill-desc {
+  color: #333;
+  font-family: var(--ff-poppins);
   font-size: 1.3rem;
   letter-spacing: 1px;
 }
