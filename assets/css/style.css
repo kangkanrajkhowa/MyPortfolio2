@@ -374,6 +374,7 @@ canvas {
 }
 
 .hero-banner {
+  position: relative;
   /* width: 150px; */
   height: 272px;
   /* background-color: var(--independence); */
@@ -1383,7 +1384,8 @@ canvas {
 }
 
 .project-img:hover {
-	opacity: 0.9;
+	opacity: 0.85;
+  transform: scale(1.015);
 }
 
 .project:nth-child(even) a {

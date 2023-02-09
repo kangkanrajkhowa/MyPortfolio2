@@ -167,3 +167,52 @@ var typed = new Typed("#typed-text", {
   loopCount: Infinity,
   showCursor: false,
 });
+
+$("#ajaxForm").submit(function (e) {
+  startLoader();
+  e.preventDefault();
+  var action = $(this).attr("action");
+  $.ajax({
+    type: "POST",
+    url: action,
+    crossDomain: true,
+    data: new FormData(this),
+    dataType: "json",
+    processData: false,
+    contentType: false,
+    headers: {
+      "Accept": "application/json"
+    }
+  }).done(function () {
+    stopLoader();
+    $("input").val('');
+    $("textarea").val('');
+    swal({
+      title: "Success",
+      text: "Form has been submitted successfully!",
+      icon: "success",
+    });
+    
+  }).fail(function () {
+    stopLoader();
+    swal({
+      title: "Failed",
+      text: "Some error occured while submitting. Please try again!",
+      icon: "error",
+    });
+  });
+});
+function startLoader(){
+  $('.loader').show();
+  $("input").prop('readonly', true);
+  $("textarea").prop('readonly', true);
+  $(".btn-submit").attr('disabled','disabled');
+  $(".contact-form").css({ opacity:0.2 });
+}
+function stopLoader(){
+  $('.loader').hide();
+  $("input").prop('readonly', false);
+  $("textarea").prop('readonly', false);
+  $(".btn-submit").removeAttr('disabled');
+  $(".contact-form").css({ opacity:1 });
+}
