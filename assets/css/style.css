@@ -650,9 +650,6 @@ textarea.contact-input {
 .contact-item:not(:last-child) {
   margin-block-end: 20px;
 }
-.contact-item-link:not(address):is(:hover, :focus) {
-    color: #333;
-}
 .contact-icon {
   background-color: #1c6a98;
   font-size: 2.4rem;
@@ -672,7 +669,7 @@ textarea.contact-input {
 }
 
 .contact-item-link:not(address):is(:hover, :focus) {
-  color: var(--white);
+  color: #333;
 }
 
 
