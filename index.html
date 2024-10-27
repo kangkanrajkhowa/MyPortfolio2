@@ -669,199 +669,394 @@
         </div>
       </section>
       <style>
-        .site-heading h2 {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+      @charset "UTF-8";
+.pricingTable {
+  margin: 40px auto;
 }
-
-.site-heading h2 span {
-  color: #ffaf5a;
-}
-
-.site-heading h4 {
-  display: inline-block;
-  padding-bottom: 20px;
-  position: relative;
-  text-transform: capitalize;
-  z-index: 1;
-}
-
-.site-heading h4::before {
-  background: #ffaf5a none repeat scroll 0 0;
-  bottom: 0;
-  content: "";
-  height: 2px;
-  left: 50%;
-  margin-left: -25px;
-  position: absolute;
-  width: 50px;
-}
-
-.site-heading h2 span {
-  color: #ffaf5a;
-}
-
-.site-heading {
-  margin-bottom: 60px;
-  overflow: hidden;
-  margin-top: -5px;
-}
-
-.pricing-area .site-heading {
-  margin-bottom: 100px;
-}
-
-.pricing-item {
-  background: #ffffff none repeat scroll 0 0;
-  -moz-box-shadow: 0 0 10px #cccccc;
-  -webkit-box-shadow: 0 0 10px #cccccc;
-  -o-box-shadow: 0 0 10px #cccccc;
-  box-shadow: 0 0 10px #cccccc;
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 9;
-}
-
-.pricing-item .icon {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 50px;
-  height: 100px;
-  left: 50%;
-  line-height: 100px;
-  margin-left: -50px;
-  margin-top: -50px;
-  position: absolute;
+.pricingTable > .pricingTable-title {
   text-align: center;
-  top: 0;
-  width: 100px;
+  color: #6e768d;
+  font-size: 3em;
+  font-size: 300%;
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
 }
-
-.pricing-item .icon::after {
-  background: #ffffff none repeat scroll 0 0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  content: "";
-  height: 100%;
-  left: 0;
+.pricingTable > .pricingTable-subtitle {
+  text-align: center;
+  color: #b4bdc6;
+  font-size: 1.8em;
+  letter-spacing: 0.04em;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 480px) {
+  .pricingTable > .pricingTable-subtitle {
+    margin-bottom: 30px;
+  }
+}
+.pricingTable-firstTable {
+  list-style: none;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+}
+.pricingTable-firstTable_table {
+  vertical-align: middle;
+  width: 31%;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 0px 30px 40px;
+  text-align: center;
+  max-width: 320px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pricingTable-firstTable_table > * {
+    display: block;
+    float: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+.pricingTable-firstTable_table:hover {
+  transform: scale(1.08);
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table:hover {
+    transform: none;
+  }
+}
+.pricingTable-firstTable_table:not(:last-of-type) {
+  margin-right: 3.5%;
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table:not(:last-of-type) {
+    margin-right: auto;
+  }
+}
+.pricingTable-firstTable_table:nth-of-type(2) {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table:nth-of-type(2) h1 {
+    padding-top: 8%;
+  }
+}
+.pricingTable-firstTable_table:nth-of-type(2):before {
+  content: "Most Popular";
   position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.pricing-item.active .icon::after {
-  background: #ffaf5a none repeat scroll 0 0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.pricing-item.active .icon i {
-  color: #ffffff !important;
-}
-
-.pricing-item .icon i {
-  color: #ffaf5a;
-  cursor: inherit !important;
-}
-
-.pricing-header h4 {
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #323a45;
-}
-
-.pricing-header h2 {
-  color: #323a45;
-  font-size: 50px;
-  font-weight: 900;
-  letter-spacing: -1px;
-  line-height: 1;
-  margin-bottom: 0;
-}
-
-.pricing-header h2 sup {
-  font-size: 24px;
-  font-weight: 500;
+  color: white;
+  display: block;
+  background-color: #3bbdee;
+  text-align: center;
+  right: 15px;
   top: -25px;
-}
-
-.pricing-header h2 sub {
-  font-size: 18px;
-  font-weight: 400;
-  margin-left: -5px;
-}
-
-.pricing-item .pricing-header span {
-  font-family: "Poppins",sans-serif;
-  font-weight: 600;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-size: 0.5em;
+  padding-top: 22px;
   text-transform: uppercase;
+  letter-spacing: 0.13em;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 988px) {
+  .pricingTable-firstTable_table:nth-of-type(2):before {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table:nth-of-type(2):before {
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    top: -10px;
+    padding-top: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pricingTable-firstTable_table:nth-of-type(2):before {
+    font-size: 0.8em;
+  }
+}
+.pricingTable-firstTable_table:nth-of-type(2):hover:before {
+  transform: rotate(360deg);
+}
+.pricingTable-firstTable_table__header {
+  font-size: 1.6em;
+  padding: 40px 0px;
+  border-bottom: 2px solid #ebedec;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1068px) {
+  .pricingTable-firstTable_table__header {
+    font-size: 1.45em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table__header {
+    padding: 0px;
+    border-bottom: none;
+    float: left;
+    width: 33%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .pricingTable-firstTable_table__header {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pricingTable-firstTable_table__header {
+    float: none;
+    width: 100%;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+  }
+}
+.pricingTable-firstTable_table__pricing {
+  font-size: 3em;
+  padding: 30px 0px;
+  border-bottom: 2px solid #ebedec;
+  line-height: 0.7;
+}
+@media screen and (max-width: 1068px) {
+  .pricingTable-firstTable_table__pricing {
+    font-size: 2.8em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table__pricing {
+    border-bottom: none;
+    padding: 0;
+    float: left;
+    clear: left;
+    width: 33%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .pricingTable-firstTable_table__pricing {
+    font-size: 2.4em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pricingTable-firstTable_table__pricing {
+    float: none;
+    width: 100%;
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+}
+.pricingTable-firstTable_table__pricing span:first-of-type {
+  font-size: 0.35em;
+  vertical-align: top;
+  letter-spacing: 0.15em;
+}
+@media screen and (max-width: 1068px) {
+  .pricingTable-firstTable_table__pricing span:first-of-type {
+    font-size: 0.3em;
+  }
+}
+.pricingTable-firstTable_table__pricing span:last-of-type {
+  vertical-align: bottom;
+  font-size: 0.3em;
+  letter-spacing: 0.04em;
+  padding-left: 0.2em;
+}
+@media screen and (max-width: 1068px) {
+  .pricingTable-firstTable_table__pricing span:last-of-type {
+    font-size: 0.25em;
+  }
+}
+.pricingTable-firstTable_table__options {
+  list-style: none;
+  padding: 15px;
+  font-size: 0.9em;
+  border-bottom: 2px solid #ebedec;
+}
+@media screen and (max-width: 1068px) {
+  .pricingTable-firstTable_table__options {
+    font-size: 0.85em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table__options {
+    border-bottom: none;
+    padding: 0;
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .pricingTable-firstTable_table__options {
+    font-size: 0.7em;
+    margin-right: 8%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pricingTable-firstTable_table__options {
+    font-size: 1.3em;
+    margin-right: none;
+    margin-bottom: 10px;
+  }
+}
+.pricingTable-firstTable_table__options > li {
+  padding: 8px 0px;
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table__options > li {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 610px) {
+  .pricingTable-firstTable_table__options > li {
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pricingTable-firstTable_table__options > li {
+    text-align: center;
+  }
+}
+.pricingTable-firstTable_table__options > li:before {
+  content: "✓";
+  display: inline-flex;
+  margin-right: 15px;
+  color: white;
+  background-color: #74ce6a;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 0.8em;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1068px) {
+  .pricingTable-firstTable_table__options > li:before {
+    width: 14px;
+    height: 14px;
+    padding: 1.5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table__options > li:before {
+    width: 12px;
+    height: 12px;
+  }
+}
+.pricingTable-firstTable_table__getstart {
+  color: white;
+  border: 0;
+  background-color: #71ce73;
+  margin-top: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px;
+  box-shadow: 0px 3px 0px 0px #66ac64;
+  letter-spacing: 0.07em;
+  transition: all 0.4s ease;
+}
+@media screen and (max-width: 1068px) {
+  .pricingTable-firstTable_table__getstart {
+    font-size: 0.95em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table__getstart {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 610px) {
+  .pricingTable-firstTable_table__getstart {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pricingTable-firstTable_table__getstart {
+    font-size: 1em;
+    width: 50%;
+    margin: 10px auto;
+  }
+}
+.pricingTable-firstTable_table__getstart:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 40px 29px -19px rgba(102, 172, 100, 0.9);
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table__getstart:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+.pricingTable-firstTable_table__getstart:active {
+  box-shadow: inset 0 0 10px 1px #66a564, 0px 40px 29px -19px rgba(102, 172, 100, 0.95);
+  transform: scale(0.95) translateY(-9px);
+}
+@media screen and (max-width: 767px) {
+  .pricingTable-firstTable_table__getstart:active {
+    transform: scale(0.95) translateY(0);
+    box-shadow: none;
+  }
 }
 
-.pricing-header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 20px !important;
-  padding: 50px 30px 30px !important;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  background-color: #f0f4f7;
+  color: #717787;
+}
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 776px) {
+  body {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 496px) {
+  body {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 40%;
+  }
 }
 
-.pricing-item .footer {
-  padding: 20px 30px 30px;
-}
-
-.pricing-item li {
-  font-family: "Poppins",sans-serif;
-  line-height: 40px;
-  margin: 0 30px;
-  text-transform: capitalize;
-}
-
-.pricing-area .pricing-item.active .pricing-header {
-  background: #ffaf5a none repeat scroll 0 0;
-  border-color: transparent;
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
-.pricing-area.color-yellow .pricing-item.active .pricing-header {
-  background: #ff9800 none repeat scroll 0 0;
-}
-
-.pricing-area .pricing-item.active .pricing-header h2,
-.pricing-area .pricing-item.active .pricing-header h4,
-.pricing-area .pricing-item.active .pricing-header span {
-  color: #ffffff;
-}
-
-.pricing-area .pricing-item.active .pricing-header span.badge {
-  background: #ffffff none repeat scroll 0 0;
-  color: #323a45;
-}
-
-.pricing-item li i {
-  color: #999;
-  margin-left: 2px;
-  margin-right: 5px;
-}
-
-.pricing-item li i:hover {
-  cursor: help;
-}
-
-.pricing-item li i.fa-times {
-  color: #e22626;
-}
-
 
       </style>
 <section id="pricing" class="pricing-area bg-gray">
